@@ -12,6 +12,7 @@ import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import ExpenseItem from './components/ExpenseItem';
 import AllocationForm from './components/AllocationForm';
+import Currency from './components/Currency';
 
 
 const App = () => {
@@ -20,16 +21,15 @@ const App = () => {
             <div className='container'>
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
                 <div className='row mt-3'>
-                    <Budget />
-
-                    <Remaining />
-
-                    <ExpenseTotal />
+                    <div className='d-flex justify-content-around'>
+                        <Budget />
+                        <Remaining />
+                        <ExpenseTotal />
+                        <Currency />
+                    </div>
 
                     <ExpenseList />
-
                     <ExpenseItem />
-
                     <AllocationForm />
 
                 </div>
